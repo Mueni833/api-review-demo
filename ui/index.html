@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Team Dashboard</h1>
+    <button id="cta" class="btn">Primary Action</button>
+  </header>
+
+  <main class="grid" role="main">
+    <section aria-labelledby="stats-title" class="card">
+      <h2 id="stats-title">Stats</h2>
+      <p>Total users: <strong>1,248</strong></p>
+    </section>
+
+    <section aria-labelledby="activity-title" class="card">
+      <h2 id="activity-title">Recent Activity</h2>
+      <ul>
+        <li>New signup: Alice</li>
+        <li>Password reset: John</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="notes-title" class="card">
+      <h2 id="notes-title">Notes</h2>
+      <label for="note" class="sr-only">Add note</label>
+      <textarea id="note" rows="4" placeholder="Add a note..."></textarea>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
